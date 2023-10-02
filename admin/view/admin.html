@@ -88,7 +88,14 @@
             <th><em class="fa fa-cog"></em> Action</th>
           </tr>
         </thead>
-        <tbody id="tablePhone">
+        <tbody id="tablePhone" >
+      
+        </thead>
+        <tbody>
+          
+        </tbody>
+      
+        </table>
         </tbody>
       </table>
     </div>
@@ -110,6 +117,23 @@
             <div class="modal-body">
               <form role="form" id="formPhone">
               
+                
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"
+                        ><i class="fa-solid fa-mobile-screen-button"></i></span>
+                    </div>
+                    <input
+                      type="text"
+                      name="name"
+                      id="id"
+                      class="form-control input-sm"
+                      placeholder="Id"
+                    />
+                  </div>
+                  <span class="sp-thongbao" id="tbname"></span>
+                </div>
                 <div class="form-group">
                   <div class="input-group">
                     <div class="input-group-prepend">
@@ -233,7 +257,7 @@
                     </div>
                     <select class="form-control" name="chucvu" id="type">
                       <option selected disabled>Select brand</option>
-                      <option>Apple</option>
+                      <option>Iphone</option>
                       <option>Samsung</option>
                     </select>
                   </div>
@@ -393,7 +417,10 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script type="module" src="../controller/main.js"></script>
+  <script src="../model/Product2.js"></script>
+  <script src="../services/productsServ2.js"></script>
+  <script src="../controller/controller2.js"></script>
+  <script type="module" src="../main2.js"></script>
   
 </body>
 
